@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Tailwind</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-dark-blau: #1a2456;
+        --color-light: #f0efed;
+        --color-dark: #080b1b;
+        --color-btn: #ff8b68;
+      }
+
+      @layer base {
+        header,
+        footer {
+          @apply bg-dark-blau;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div>
+        <nav class="flex justify-between items-center p-6">
+          <div class="flex justify-between items-center w-[250px]">
+            <a href="https://monogramcc.com/"
+              ><img src="" alt="logo" class="w-10 h-10"
+            /></a>
+            <span class="text-2xl font-semibold text-[#f0efed]">Monogram</span>
+          </div>
+          <div
+            class="flex justify-between items-center w-[450px] text-lg font-medium text-[#f0efed]"
+          >
+            <a href="#">Articles</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
