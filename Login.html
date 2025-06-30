@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-darkblue: #1a2456;
+        --color-pinkyorange: #1a2456;
+        --color-dark: #f0efed;
+        --color-bordergray: #e5e5e5;
+        --color-buttonblue: #1f73b7;
+        --color-button-hover: #144a75;
+        --color-dark-blau: #1a2456;
+        --color-light: #f0efed;
+        --color-btn: #ff8b68;
+      }
+      @layer components {
+        .loginwith {
+          @apply flex gap-4 mx-8 items-center my-4 shadow-md/20  hover:bg-gray-300 hover:cursor-pointer hover:text-dark-blau;
+        }
+        .inputbox {
+          @apply border rounded-sm border-gray-400 rounded-sm p-1 w-full my-1;
+        }
+        .sichtbar {
+          @apply absolute right-3 w-5 h-5  cursor-pointer -translate-y-8;
+        }
+        .signin-button {
+          @apply bg-dark-blau text-white font-bold w-full rounded-sm p-2  hover:bg-button-hover hover:cursor-pointer;
+        }
+      }
+      @layer base {
+        /* section{
+        @apply py-4;
+      } */
+        header {
+          @apply bg-dark-blau;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <nav class="flex justify-between items-center p-6">
+          <div class="flex justify-between items-center w-[250px]">
+            <a href="https://monogramcc.com/"
+              ><img src="" alt="logo" class="w-10 h-10"
+            /></a>
+            <span class="text-2xl font-semibold text-[#f0efed]">Monogram</span>
+          </div>
+          <div
+            class="flex justify-between items-center w-[450px] text-lg font-medium text-[#f0efed]"
+          >
+            <a href="./index.html#articles">Articles</a>
+            <a href="#">Shop</a>
+            <a href="./index.html#contact">Contact</a>
+            <a href="#">Login</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="max-w-sm mx-auto mt-4 md:border-4 md:border-bordergray lg:max-w-screen-md lg:mt-16 lg:p-8"
+    >
+      <section class="lg:mb-4">
+        <div class="text-center">Login to Monogram</div>
+        <div class="text-center">
+          New to Monogram?
+          <a class="text-blue-600 underline" href="#">Sign up</a>
+        </div>
+      </section>
+      <section
+        class="flex flex-col  justify-center items-center lg:w-full lg:flex-row "
+      >
+        <div class="w-full border-b border-gray-300 pb-4 lg:border-none ">
+          <div class="loginwith">
+            <img class="scale-50" src="login-img/g.webp" />
+            <span><strong>sign in with Google</strong></span>
+          </div>
+          <div class="loginwith">
+            <img class="scale-50" src="login-img/icons8-amazon-48.png" />
+            <span><strong>sign in with Amazon</strong></span>
+          </div>
+          <div class="loginwith">
+            <img class="scale-50" src="login-img/icons8-paypal-48.png" />
+            <span><strong>sign in with paypal</strong></span>
+          </div>
+        </div>
+        <div class="w-full lg:border-l lg: border-gray-300">
+          <form class="m-4 p-4">
+            <div class="flex justify-start items-start">
+              <span class="text-sm font-bold">Email:</span>
+            </div>
+            <input class="inputbox" type="text" name="username" id="username" />
+            <div class="flex justify-start items-start">
+              <span class="text-sm font-bold">Password: </span>
+            </div>
+            <div class="relative">
+              <input
+                class="inputbox"
+                type="password"
+                name="password"
+                id="password"
+              />
+              <img class="sichtbar" src="login-img/icons8-sichtbar-30.png" />
+            </div>
+            <div class="pt-2">
+              <a class="text-blue-600 underline" href="#" target="_blank"
+                >Forgot password?</a
+              >
+            </div>
+          </form>
+          <div class="mx-8">
+            <input class="signin-button" type="button" value="Sign in" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
