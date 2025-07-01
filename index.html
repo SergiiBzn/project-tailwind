@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Tailwind</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-      rel="stylesheet"
-    />
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Tailwind</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
 
-    <style type="text/tailwindcss">
-      @theme {
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
         --color-dark-blau: #1a2456;
         --color-light: #f0efed;
         --color-dark: #080b1b;
@@ -108,429 +108,248 @@
         }
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <header>
-      <div>
-        <nav class="flex justify-between items-center p-9">
-          <div class="flex justify-between items-center w-[250px]">
-            <a href="index.html"
-              ><img src="images/logo.png" alt="logo" class="w-10 h-10 bg-white"
-            /></a>
-            <a
-              href="index.html"
-              class="text-2xl font-semibold text-light hover:text-btn"
-              >Monogram</a
-            >
-          </div>
-          <div
-            class="flex justify-between items-center w-[450px] text-lg font-medium text-light"
-          >
-            <a href="#articles" class="hover:text-btn">Articles</a>
-            <a href="#" class="hover:text-btn">Shop</a>
-            <a href="#contact" class="hover:text-btn">Contact</a>
-            <a href="Login.html" target="_blank" class="hover:text-btn"
-              >Login</a
-            >
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="articles" id="articles">
-        <div class="articles__container">
-          <div class="articles__container__item">
-            <img
-              class="articles__container__item__img"
-              src="./images/articles/article1.jpeg"
-              alt="sfdf"
-            />
-            <div class="articles__container__item__content">
-              <h2 class="articles__container__item__content__heading">
-                Mini Console
-              </h2>
-              <p class="articles__container__item__content__paragraph-first">
-                Sold Out
-              </p>
-              <p
-                class="articles__container__item__content__paragraph-second full--width"
-              >
-                Ideal for everyday shortcuts. Adaptable to any workflow.
-              </p>
-            </div>
-
-            <span class="badge">Pre-Order</span>
-          </div>
-
-          <div class="articles__container__item">
-            <img
-              class="articles__container__item__img"
-              src="./images/articles/article1.jpeg"
-              alt="asdfa"
-            />
-            <div class="articles__container__item__content">
-              <h2 class="articles__container__item__content__heading">
-                Audio Console
-              </h2>
-              <p class="articles__container__item__content__paragraph-first">
-                Sold Out
-              </p>
-              <p
-                class="articles__container__item__content__paragraph-second full--width"
-              >
-                Ideal for music & audio. Adaptable to any workflow.
-              </p>
-            </div>
-
-            <span class="badge">Pre-Order</span>
-          </div>
-
-          <div class="articles__container__item">
-            <img
-              class="articles__container__item__img"
-              src="./images/articles/article1.jpeg"
-              alt="adsfasd"
-            />
-            <div class="articles__container__item__content">
-              <h2 class="articles__container__item__content__heading">
-                Photo Console
-              </h2>
-              <p class="articles__container__item__content__paragraph-first">
-                Sold Out
-              </p>
-              <p
-                class="articles__container__item__content__paragraph-second full--width"
-              >
-                Ideal for photo & video. Adaptable to any workflow.
-              </p>
-            </div>
-            <span class="badge">Pre-Order</span>
-          </div>
-
-          <div class="articles__container__item">
-            <img
-              class="articles__container__item__img"
-              src="./images/articles/article1.jpeg"
-              alt="sdfdg"
-            />
-            <div class="articles__container__item__content">
-              <h2 class="articles__container__item__content__heading">
-                Video Console
-              </h2>
-              <p class="articles__container__item__content__paragraph-first">
-                Sold Out
-              </p>
-              <p
-                class="articles__container__item__content__paragraph-second full--width"
-              >
-                Ideal for Video & Film. Adaptable to any workflow.
-              </p>
-            </div>
-            <span class="badge">Pre-Order</span>
-          </div>
-
-          <div class="articles__container__item full--width">
-            <img
-              class="articles__container__item__img"
-              src="./images/articles/article7.jpg"
-              alt="sgdfgs"
-            />
-            <div class="articles__container__item__content">
-              <h2 class="articles__container__item__content__heading">
-                Monogram Keyboard + Multipad
-              </h2>
-              <p class="articles__container__item__content__paragraph-first">
-                Sold Out
-              </p>
-              <p
-                class="articles__container__item__content__paragraph-second full--width"
-              >
-                Adaptable to any workflow.
-              </p>
-            </div>
-            <span class="badge">Pre-Order</span>
-          </div>
+<body>
+  <header>
+    <div>
+      <nav class="flex justify-between items-center p-9">
+        <div class="flex justify-between items-center w-[250px]">
+          <a href="index.html"><img src="images/logo.png" alt="logo" class="w-10 h-10 bg-white" /></a>
+          <a href="index.html" class="text-2xl font-semibold text-light hover:text-btn">Monogram</a>
         </div>
-      </section>
-
-      <section class="mb-8">
-        <div class="w-full mx-auto bg-[#c4c4c4]">
-          <img
-            class="flex justify-self-center w-full h-auto max-w-[1400px] mt-4"
-            src="./images/lowerSection1.png"
-            alt=""
-          />
+        <div class="flex justify-between items-center w-[450px] text-lg font-medium text-light">
+          <a href="#" class="hover:text-btn">Articles</a>
+          <a href="#" class="hover:text-btn">Shop</a>
+          <a href="#" class="hover:text-btn">Contact</a>
+          <a href="Login.html" class="hover:text-btn">Login</a>
         </div>
-      </section>
-      <section
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-auto max-w-[1400px]"
-      >
-        <figure class="p-4">
-          <img class="w-[90%] h-auto" src="./images/lowerSection2.png" alt="" />
-          <figcapture class="flex justify-between w-[90%]">
-            <div class="articles__container__item__content__heading">
-              CARRYING CASE
-            </div>
-            <div class="w-[40%] flex justify-end">59€</div>
-          </figcapture>
-        </figure>
-        <figure class="p-4">
-          <img
-            class="w-[90%] h-auto"
-            src="./images/lowerSection3.png"
-            alt=""
-          /><figcapture class="flex justify-between w-[90%]">
-            <div class="articles__container__item__content__heading">
-              MONOGRAM CORE
-            </div>
-            <div class="w-[40%] flex justify-end">159€</div>
-          </figcapture>
-        </figure>
-        <figure class="p-4">
-          <img
-            class="w-[90%] h-auto"
-            src="./images/lowerSection4.png"
-            alt=""
-          /><figcapture class="flex justify-between w-[90%]">
-            <div class="articles__container__item__content__heading">
-              SLIDER MODULE
-            </div>
-            <div class="w-[40%] flex justify-end">159€</div>
-          </figcapture>
-        </figure>
-        <figure class="p-4">
-          <img
-            class="w-[90%] h-auto"
-            src="./images/lowerSection5.png"
-            alt=""
-          /><figcapture class="flex justify-between w-[90%]">
-            <div class="articles__container__item__content__heading">
-              ESSENTIAL KEYS MODULE
-            </div>
-            <div class="w-[40%] flex justify-end">129€</div>
-          </figcapture>
-        </figure>
-        <figure class="p-4">
-          <img
-            class="w-[90%] h-auto"
-            src="./images/lowerSection6.png"
-            alt=""
-          /><figcapture class="flex justify-between w-[90%]">
-            <div class="articles__container__item__content__heading">
-              ORBITER MODULE
-            </div>
-            <div class="w-[40%] flex justify-end">159€</div>
-          </figcapture>
-        </figure>
-        <figure class="p-4">
-          <img
-            class="w-[90%] h-auto"
-            src="./images/lowerSection7.png"
-            alt=""
-          /><figcapture class="flex justify-between w-[90%]">
-            <div class="articles__container__item__content__heading">
-              DIAL MODULE
-            </div>
-            <div class="w-[40%] flex justify-end">129€</div>
-          </figcapture>
-        </figure>
-        <figure class="p-4">
-          <img
-            class="w-[90%] h-auto"
-            src="./images/lowerSection8.png"
-            alt=""
-          /><figcapture class="flex justify-between w-[90%]">
-            <div class="articles__container__item__content__heading">
-              CONSOLE PACK: AUDIO
-            </div>
-            <div class="w-[40%] flex justify-end">159€</div>
-          </figcapture>
-        </figure>
-        <figure class="p-4">
-          <img
-            class="w-[90%] h-auto"
-            src="./images/lowerSection9.png"
-            alt=""
-          /><figcapture class="flex justify-between w-[90%]">
-            <div class="articles__container__item__content__heading">
-              CONSOLE PACK: PHOTO
-            </div>
-            <div class="w-[40%] flex justify-end">39€</div>
-          </figcapture>
-        </figure>
-        <figure class="p-4">
-          <img
-            class="w-[90%] h-auto"
-            src="./images/lowerSection10.png"
-            alt=""
-          /><figcapture class="flex justify-between w-[90%]">
-            <div class="articles__container__item__content__heading">
-              CONSOLE PACK: VIDEO
-            </div>
-            <div class="w-[40%] flex justify-end">69€</div>
-          </figcapture>
-        </figure>
-        <figure class="p-4">
-          <img
-            class="w-[90%] h-auto"
-            src="./images/lowerSection11.png"
-            alt=""
-          /><figcapture class="flex justify-between w-[90%]">
-            <div class="articles__container__item__content__heading">
-              MONOGRAM CARE
-            </div>
-            <div class="w-[40%] flex justify-end">19-129€</div>
-          </figcapture>
-        </figure>
-      </section>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="articles">
+      <div class="articles__container">
+        <div class="articles__container__item">
+          <img class="articles__container__item__img" src="images/articles/article1.jpeg" alt="sfdf" />
+          <div class="articles__container__item__content">
+            <h2 class="articles__container__item__content__heading">
+              Mini Console
+            </h2>
+            <p class="articles__container__item__content__paragraph-first">
+              Sold Out
+            </p>
+            <p class="articles__container__item__content__paragraph-second full--width">
+              Ideal for everyday shortcuts. Adaptable to any workflow.
+            </p>
+          </div>
 
-      <!-- contact section -->
-      <section class="contact" id="contact">
-        <div class="contact__container">
-          <h2 class="contact__container__heading">Contact Us</h2>
-          <form method="post" action="#" class="contact__container__form">
-            <div class="contact__container__form__input-container">
-              <label
-                for="name"
-                class="contact__container__form__input-container__label"
-                >Name</label
-              >
-              <input
-                type="text"
-                id="name"
-                class="contact__container__form__input-container__input"
-                placeholder="Enter your name"
-                autocomplete="name"
-              />
-            </div>
-
-            <div class="contact__container__form__input-container">
-              <label
-                for="email"
-                class="contact__container__form__input-container__label"
-                >Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="contact__container__form__input-container__input"
-                placeholder="Enter your email"
-                autocomplete="email"
-              />
-            </div>
-
-            <div class="contact__container__form__input-container">
-              <label
-                for="message"
-                class="contact__container__form__input-container__label"
-                >Message</label
-              >
-              <textarea
-                id="message"
-                class="contact__container__form__input-container__textarea"
-                placeholder="Enter your message"
-                rows="5"
-                cols="30"
-              ></textarea>
-            </div>
-
-            <div class="contact__container__form__input-container">
-              <button
-                type="submit"
-                class="contact__container__form__input-container__button hover"
-              >
-                Send
-              </button>
-            </div>
-          </form>
+          <span class="badge">Pre-Order</span>
         </div>
-      </section>
-    </main>
 
-    <footer class="flex justify-around items-start p-9 text-light">
-      <div class="">
-        <h3 class="font-bold text-lg uppercase">Monogram</h3>
-        <ul class="pt-3 leading-[2rem]">
-          <li>305 King St. W.</li>
-          <li>Suite 502</li>
-          <li>Kitchener, ON</li>
-          <li>Canada</li>
-        </ul>
-      </div>
-      <div class="">
-        <h3 class="font-bold text-lg uppercase">Quick Links</h3>
-        <ul class="pt-3 leading-[2rem]">
-          <li><a href="" class="hover:text-btn">Articles</a></li>
-          <li><a href="" class="hover:text-btn">Shop</a></li>
-          <li><a href="" class="hover:text-btn">Contact</a></li>
-          <li><a href="" class="hover:text-btn">Login</a></li>
-        </ul>
-      </div>
-      <div class="">
-        <h3 class="font-bold text-lg uppercase">Information</h3>
-        <ul class="pt-3 leading-[2rem]">
-          <li><a href="" class="hover:text-btn">About Us</a></li>
-          <li><a href="" class="hover:text-btn">Work with us</a></li>
-          <li><a href="" class="hover:text-btn">Privacy Policy</a></li>
-          <li><a href="" class="hover:text-btn">Term of Use</a></li>
-          <li><a href="" class="hover:text-btn">Term of Sale</a></li>
-        </ul>
-      </div>
-      <div class="text-light">
-        <h3 class="font-bold uppercase pb-3">Subscribe to Monogram</h3>
-        <p class="max-w-md">
-          Master productivity with Creative Console and get all the latest
-          Monogram news.
-        </p>
+        <div class="articles__container__item">
+          <img class="articles__container__item__img" src="images/articles/article1.jpeg" alt="asdfa" />
+          <div class="articles__container__item__content">
+            <h2 class="articles__container__item__content__heading">
+              Audio Console
+            </h2>
+            <p class="articles__container__item__content__paragraph-first">
+              Sold Out
+            </p>
+            <p class="articles__container__item__content__paragraph-second full--width">
+              Ideal for music & audio. Adaptable to any workflow.
+            </p>
+          </div>
 
-        <form class="flex flex-wrap gap-4">
-          <input
-            type="email"
-            placeholder="Email Address"
-            class="flex-1 min-w-[220px] bg-transparent border border-[#eac4b8] text-[#ecedf0] placeholder-[#1e2150] px-4 py-2 focus:outline-none"
-          />
-          <button
-            type="submit"
-            class="bg-[#eac4b8] text-[#1e2150] px-6 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#d9afa1] transition"
-          >
-            Submit
-          </button>
+          <span class="badge">Pre-Order</span>
+        </div>
+
+        <div class="articles__container__item">
+          <img class="articles__container__item__img" src="images/articles/article1.jpeg" alt="adsfasd" />
+          <div class="articles__container__item__content">
+            <h2 class="articles__container__item__content__heading">
+              Photo Console
+            </h2>
+            <p class="articles__container__item__content__paragraph-first">
+              Sold Out
+            </p>
+            <p class="articles__container__item__content__paragraph-second full--width">
+              Ideal for photo & video. Adaptable to any workflow.
+            </p>
+          </div>
+          <span class="badge">Pre-Order</span>
+        </div>
+
+        <div class="articles__container__item">
+          <img class="articles__container__item__img" src="images/articles/article1.jpeg" alt="sdfdg" />
+          <div class="articles__container__item__content">
+            <h2 class="articles__container__item__content__heading">
+              Video Console
+            </h2>
+            <p class="articles__container__item__content__paragraph-first">
+              Sold Out
+            </p>
+            <p class="articles__container__item__content__paragraph-second full--width">
+              Ideal for Video & Film. Adaptable to any workflow.
+            </p>
+          </div>
+          <span class="badge">Pre-Order</span>
+        </div>
+
+        <div class="articles__container__item full--width">
+          <img class="articles__container__item__img" src="images/articles/article7.jpg" alt="sgdfgs" />
+          <div class="articles__container__item__content">
+            <h2 class="articles__container__item__content__heading">
+              Monogram Keyboard + Multipad
+            </h2>
+            <p class="articles__container__item__content__paragraph-first">
+              Sold Out
+            </p>
+            <p class="articles__container__item__content__paragraph-second full--width">
+              Adaptable to any workflow.
+            </p>
+          </div>
+          <span class="badge">Pre-Order</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <div class="w-full mx-auto bg-[#c4c4c4]">
+        <img class="flex justify-self-center w-full h-auto max-w-[1400px] mt-4" src="./images/lowerSection1.png"
+          alt="" />
+      </div>
+    </section>
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-auto max-w-[1400px]">
+      <figure class="p-4">
+        <img class="w-[90%] h-auto" src="./images/lowerSection2.png" alt="" />Picture 1
+      </figure>
+      <figure class="p-4">
+        <img class="w-[90%] h-auto" src="./images/lowerSection3.png" alt="" />Picture 2
+      </figure>
+      <figure class="p-4">
+        <img class="w-[90%] h-auto" src="./images/lowerSection4.png" alt="" />Picture 3
+      </figure>
+      <figure class="p-4">
+        <img class="w-[90%] h-auto" src="./images/lowerSection5.png" alt="" />Picture 4
+      </figure>
+      <figure class="p-4">
+        <img class="w-[90%] h-auto" src="./images/lowerSection6.png" alt="" />Picture 5
+      </figure>
+      <figure class="p-4">
+        <img class="w-[90%] h-auto" src="./images/lowerSection7.png" alt="" />Picture 6
+      </figure>
+      <figure class="p-4">
+        <img class="w-[90%] h-auto" src="./images/lowerSection8.png" alt="" />Picture 7
+      </figure>
+      <figure class="p-4">
+        <img class="w-[90%] h-auto" src="./images/lowerSection9.png" alt="" />Picture 8
+      </figure>
+      <figure class="p-4">
+        <img class="w-[90%] h-auto p-4" src="./images/lowerSection10.png" alt="" />Picture 9
+      </figure>
+      <figure class="p-4">
+        <img class="w-[90%] h-auto p-4" src="./images/lowerSection11.png" alt="" />Picture 10
+      </figure>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact">
+      <div class="contact__container">
+        <h2 class="contact__container__heading">Contact Us</h2>
+        <form method="post" action="#" class="contact__container__form">
+          <div class="contact__container__form__input-container">
+            <label for="name" class="contact__container__form__input-container__label">Name</label>
+            <input type="text" id="name" class="contact__container__form__input-container__input"
+              placeholder="Enter your name" autocomplete="name" />
+          </div>
+
+          <div class="contact__container__form__input-container">
+            <label for="email" class="contact__container__form__input-container__label">Email</label>
+            <input type="email" id="email" class="contact__container__form__input-container__input"
+              placeholder="Enter your email" autocomplete="email" />
+          </div>
+
+          <div class="contact__container__form__input-container">
+            <label for="message" class="contact__container__form__input-container__label">Message</label>
+            <textarea id="message" class="contact__container__form__input-container__textarea"
+              placeholder="Enter your message" rows="5" cols="30"></textarea>
+          </div>
+
+          <div class="contact__container__form__input-container">
+            <button type="submit" class="contact__container__form__input-container__button hover">
+              Send
+            </button>
+          </div>
         </form>
-
-        <div class="flex items-center gap-4 pt-4">
-          <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
-              class="w-5 h-5"
-              alt="Instagram"
-            />
-          </a>
-          <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/twitter.svg"
-              class="w-5 h-5"
-              alt="Twitter"
-            />
-          </a>
-          <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
-              class="w-5 h-5"
-              alt="Facebook"
-            />
-          </a>
-          <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg"
-              class="w-5 h-5"
-              alt="YouTube"
-            />
-          </a>
-        </div>
-
-        <p class="pt-4 text-sm">© Monogram 2025</p>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer class="flex justify-around items-start p-9 text-light">
+    <div class="">
+      <h3 class="font-bold text-lg uppercase">Monogram</h3>
+      <ul class="pt-3 leading-[2rem]">
+        <li>305 King St. W.</li>
+        <li>Suite 502</li>
+        <li>Kitchener, ON</li>
+        <li>Canada</li>
+      </ul>
+    </div>
+    <div class="">
+      <h3 class="font-bold text-lg uppercase">Quick Links</h3>
+      <ul class="pt-3 leading-[2rem]">
+        <li><a href="" class="hover:text-btn">Articles</a></li>
+        <li><a href="" class="hover:text-btn">Shop</a></li>
+        <li><a href="" class="hover:text-btn">Contact</a></li>
+        <li><a href="" class="hover:text-btn">Login</a></li>
+      </ul>
+    </div>
+    <div class="">
+      <h3 class="font-bold text-lg uppercase">Information</h3>
+      <ul class="pt-3 leading-[2rem]">
+        <li><a href="" class="hover:text-btn">About Us</a></li>
+        <li><a href="" class="hover:text-btn">Work with us</a></li>
+        <li><a href="" class="hover:text-btn">Privacy Policy</a></li>
+        <li><a href="" class="hover:text-btn">Term of Use</a></li>
+        <li><a href="" class="hover:text-btn">Term of Sale</a></li>
+      </ul>
+    </div>
+    <div class="text-light">
+      <h3 class="font-bold uppercase pb-3">Subscribe to Monogram</h3>
+      <p class="max-w-md">
+        Master productivity with Creative Console and get all the latest
+        Monogram news.
+      </p>
+
+      <form class="flex flex-wrap gap-4">
+        <input type="email" placeholder="Email Address"
+          class="flex-1 min-w-[220px] bg-transparent border border-[#eac4b8] text-[#ecedf0] placeholder-[#1e2150] px-4 py-2 focus:outline-none" />
+        <button type="submit"
+          class="bg-[#eac4b8] text-[#1e2150] px-6 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#d9afa1] transition">
+          Submit
+        </button>
+      </form>
+
+      <div class="flex items-center gap-4 pt-4">
+        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" class="w-5 h-5"
+            alt="Instagram" />
+        </a>
+        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/twitter.svg" class="w-5 h-5" alt="Twitter" />
+        </a>
+        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" class="w-5 h-5" alt="Facebook" />
+        </a>
+        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" class="w-5 h-5" alt="YouTube" />
+        </a>
+      </div>
+
+      <p class="pt-4 text-sm">© Monogram 2025</p>
+    </div>
+  </footer>
+</body>
+
 </html>
