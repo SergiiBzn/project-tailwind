@@ -20,7 +20,7 @@
     }
     @layer components{
        .loginwith{
-        @apply flex gap-4 mx-8 items-center my-4 shadow-md/20  hover:bg-gray-300 hover:cursor-pointer hover:text-dark-blau;
+        @apply flex gap-4 mx-8 items-center px-4 my-4 shadow-md/20 hover:bg-gray-300 hover:cursor-pointer hover:text-dark-blau;
       }
       .inputbox{
         @apply border rounded-sm border-gray-400 rounded-sm p-1 w-full my-1;
@@ -49,21 +49,21 @@
 <body class="flex flex-col min-h-screen">
   <header>
     <div>
-      <nav class="flex justify-between items-center p-9">
+      <nav class="flex justify-between items-center p-6">
         <div class="flex justify-between items-center w-[250px]">
-          <a href="index.html"><img src="images/logo.png" alt="logo" class="w-10 h-10 bg-white" /></a>
-          <a href="index.html" class="text-2xl font-semibold text-light hover:text-btn">Monogram</a>
+          <a href="https://monogramcc.com/"><img src="" alt="logo" class="w-10 h-10" /></a>
+          <span class="text-2xl font-semibold text-[#f0efed]">Monogram</span>
         </div>
-        <div class="flex justify-between items-center w-[450px] text-lg font-medium text-light">
-          <a href="#" class="hover:text-btn">Articles</a>
-          <a href="#" class="hover:text-btn">Shop</a>
-          <a href="#" class="hover:text-btn">Contact</a>
-          <a href="Login.html" class="hover:text-btn">Login</a>
+        <div class="flex justify-between items-center w-[450px] text-lg font-medium text-[#f0efed]">
+          <a href="./index.html#articles">Articles</a>
+          <a href="#">Shop</a>
+          <a href="./index.html#contact">Contact</a>
+          <a href="#">Login</a>
         </div>
       </nav>
     </div>
   </header>
-  <main class="flex-grow max-w-sm mx-auto my-4 md:outline-4 md:outline-bordergray lg:max-w-screen-md lg:p-8 ">
+  <main class="flex-grow max-w-sm mx-auto my-4 md:outline-4 md:outline-bordergray lg:min-w-[760px] lg:p-4 ">
     <section class="lg:mb-4">
       <div class="text-center">Login to Monogram</div>
       <div class="text-center">New to Monogram? <a class="text-blue-600 underline" href="#">Sign up</a></div>

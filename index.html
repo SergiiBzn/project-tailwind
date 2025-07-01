@@ -17,7 +17,7 @@
         --color-light: #f0efed;
         --color-dark: #080b1b;
         --color-btn: #ff8b68;
-        --font-sans: 'Work Sans', sans-serif;
+        --font-sans: "Work Sans", sans-serif;
       }
 
       @layer base {
@@ -25,7 +25,7 @@
           @apply scroll-smooth;
         }
         body {
-          @apply min-h-screen w-auto  grid grid-rows-[auto_1fr_auto] bg-[#f0efed];
+          @apply min-h-screen w-auto  grid grid-rows-[auto_1fr_auto] bg-[#f0efed] bg-[url("https://transparenttextures.com/patterns/white-paperboard.png")];
         }
         main {
           @apply max-w-[996px] mx-auto;
@@ -74,13 +74,15 @@
           @apply uppercase text-center text-xs font-bold text-[#212529] bg-[#FF8D6B] absolute top-4 right-0 py-2 px-4;
         }
 
-        /* contact */
-
+        /* contact section*/
+        .contact {
+          @apply my-[4rem];
+        }
         .contact__container {
-          @apply w-full  pb-[4rem] px-[1rem] sm:px-[2rem] bg-[#111839];
+          @apply w-full  pb-[4rem] px-[1rem] sm:px-[2rem] bg-[#c2c2c2] bg-[url("https://transparenttextures.com/patterns/white-paperboard.png")] rounded-sm;
         }
         .contact__container__heading {
-          @apply text-center text-2xl py-[2rem] font-bold text-white uppercase;
+          @apply text-center text-2xl py-[2rem] font-bold text-[#1a2456] uppercase tracking-wide;
         }
         .contact__container__form {
           @apply grid grid-cols-[1fr]  gap-y-[0.5rem]   bg-[#1a2456] text-white px-[2rem] py-[2rem] mx-auto rounded-sm;
@@ -91,13 +93,13 @@
         .contact__container__form__input-container__label {
         }
         .contact__container__form__input-container__input {
-          @apply h-[2rem]  bg-[#c2c2c2]  text-black rounded-sm outline-none p-[0.5rem];
+          @apply h-[2rem]  bg-[#ffffff]  text-black rounded-sm outline-none p-[0.5rem];
         }
         .contact__container__form__input-container__textarea {
-          @apply bg-[#c2c2c2]  text-black rounded-sm outline-none p-[0.5rem];
+          @apply bg-[#ffffff]  text-black rounded-sm outline-none p-[0.5rem];
         }
         .contact__container__form__input-container__button {
-          @apply h-[2rem] bg-[#c2c2c2] text-[#1a2456] font-bold rounded-sm cursor-pointer transition-all duration-500 ease-in;
+          @apply h-[2rem] bg-[#c2c2c2] bg-[url("https://transparenttextures.com/patterns/white-paperboard.png")] hover:bg-[#ffffff] text-[#1a2456] font-bold rounded-sm cursor-pointer transition-all duration-500 ease-in;
         }
 
         .hover {
@@ -129,7 +131,7 @@
     <section class="articles">
       <div class="articles__container">
         <div class="articles__container__item">
-          <img class="articles__container__item__img" src="./article1.jpeg" alt="sfdf" />
+          <img class="articles__container__item__img" src="images/articles/article1.jpeg" alt="sfdf" />
           <div class="articles__container__item__content">
             <h2 class="articles__container__item__content__heading">
               Mini Console
@@ -146,7 +148,7 @@
         </div>
 
         <div class="articles__container__item">
-          <img class="articles__container__item__img" src="./article1.jpeg" alt="asdfa" />
+          <img class="articles__container__item__img" src="images/articles/article1.jpeg" alt="asdfa" />
           <div class="articles__container__item__content">
             <h2 class="articles__container__item__content__heading">
               Audio Console
@@ -163,7 +165,7 @@
         </div>
 
         <div class="articles__container__item">
-          <img class="articles__container__item__img" src="./article1.jpeg" alt="adsfasd" />
+          <img class="articles__container__item__img" src="images/articles/article1.jpeg" alt="adsfasd" />
           <div class="articles__container__item__content">
             <h2 class="articles__container__item__content__heading">
               Photo Console
@@ -179,7 +181,7 @@
         </div>
 
         <div class="articles__container__item">
-          <img class="articles__container__item__img" src="./article1.jpeg" alt="sdfdg" />
+          <img class="articles__container__item__img" src="images/articles/article1.jpeg" alt="sdfdg" />
           <div class="articles__container__item__content">
             <h2 class="articles__container__item__content__heading">
               Video Console
@@ -195,7 +197,7 @@
         </div>
 
         <div class="articles__container__item full--width">
-          <img class="articles__container__item__img" src="./article7.jpg" alt="sgdfgs" />
+          <img class="articles__container__item__img" src="images/articles/article7.jpg" alt="sgdfgs" />
           <div class="articles__container__item__content">
             <h2 class="articles__container__item__content__heading">
               Monogram Keyboard + Multipad
