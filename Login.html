@@ -49,16 +49,16 @@
 <body class="flex flex-col min-h-screen">
   <header>
     <div>
-      <nav class="flex justify-between items-center p-6">
+      <nav class="flex justify-between items-center p-9">
         <div class="flex justify-between items-center w-[250px]">
-          <a href="https://monogramcc.com/"><img src="" alt="logo" class="w-10 h-10" /></a>
-          <span class="text-2xl font-semibold text-[#f0efed]">Monogram</span>
+          <a href="index.html"><img src="images/logo.png" alt="logo" class="w-10 h-10 bg-white" /></a>
+          <a href="index.html" class="text-2xl font-semibold text-light hover:text-btn">Monogram</a>
         </div>
-        <div class="flex justify-between items-center w-[450px] text-lg font-medium text-[#f0efed]">
-          <a href="./index.html#articles">Articles</a>
-          <a href="#">Shop</a>
-          <a href="./index.html#contact">Contact</a>
-          <a href="#">Login</a>
+        <div class="flex justify-between items-center w-[450px] text-lg font-medium text-light">
+          <a href="#articles" class="hover:text-btn">Articles</a>
+          <a href="#shop" class="hover:text-btn">Shop</a>
+          <a href="#contact" class="hover:text-btn">Contact</a>
+          <a href="Login.html" target="_blank" class="hover:text-btn">Login</a>
         </div>
       </nav>
     </div>
@@ -111,20 +111,30 @@
     <div class="">
       <h3 class="font-bold text-lg uppercase">Quick Links</h3>
       <ul class="pt-3 leading-[2rem]">
-        <li><a href="" class="hover:text-btn">Articles</a></li>
-        <li><a href="" class="hover:text-btn">Shop</a></li>
-        <li><a href="" class="hover:text-btn">Contact</a></li>
-        <li><a href="" class="hover:text-btn">Login</a></li>
+        <li><a href="#articles" class="hover:text-btn">Articles</a></li>
+        <li><a href="#shop" class="hover:text-btn">Shop</a></li>
+        <li><a href="#contact" class="hover:text-btn">Contact</a></li>
+        <li><a href="Login.html" class="hover:text-btn">Login</a></li>
       </ul>
     </div>
     <div class="">
       <h3 class="font-bold text-lg uppercase">Information</h3>
       <ul class="pt-3 leading-[2rem]">
-        <li><a href="" class="hover:text-btn">About Us</a></li>
-        <li><a href="" class="hover:text-btn">Work with us</a></li>
-        <li><a href="" class="hover:text-btn">Privacy Policy</a></li>
-        <li><a href="" class="hover:text-btn">Term of Use</a></li>
-        <li><a href="" class="hover:text-btn">Term of Sale</a></li>
+        <li>
+          <a href="https://monogramcc.com/about/" class="hover:text-btn">About Us</a>
+        </li>
+        <li>
+          <a href="https://monogramcc.com/about/#jobs" class="hover:text-btn">Work with us</a>
+        </li>
+        <li>
+          <a href="https://monogramcc.com/privacy/" class="hover:text-btn">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="https://monogramcc.com/site-terms/" class="hover:text-btn">Term of Use</a>
+        </li>
+        <li>
+          <a href="https://monogramcc.com/sales-terms/" class="hover:text-btn">Term of Sale</a>
+        </li>
       </ul>
     </div>
     <div class="text-light">
@@ -134,27 +144,27 @@
         Monogram news.
       </p>
 
-      <form class="flex flex-wrap gap-4">
+      <form class="flex flex-wrap gap-4 mt-4">
         <input type="email" placeholder="Email Address"
-          class="flex-1 min-w-[220px] bg-transparent border border-[#eac4b8] text-[#ecedf0] placeholder-[#1e2150] px-4 py-2 focus:outline-none" />
+          class="flex-1 min-w-[220px] bg-transparent border bg-white text-dark placeholder-[#1e2150] px-4 py-2 focus:outline-none" />
         <button type="submit"
-          class="bg-[#eac4b8] text-[#1e2150] px-6 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#d9afa1] transition">
+          class="bg-white text-[#1e2150] px-6 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#d9afa1] transition">
           Submit
         </button>
       </form>
 
       <div class="flex items-center gap-4 pt-4">
-        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+        <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" class="w-5 h-5"
             alt="Instagram" />
         </a>
-        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+        <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/twitter.svg" class="w-5 h-5" alt="Twitter" />
         </a>
-        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+        <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" class="w-5 h-5" alt="Facebook" />
         </a>
-        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+        <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" class="w-5 h-5" alt="YouTube" />
         </a>
       </div>
