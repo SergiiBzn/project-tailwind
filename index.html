@@ -28,7 +28,7 @@
           @apply min-h-screen w-auto  grid grid-rows-[auto_1fr_auto] bg-[#f0efed];
         }
         main {
-          @apply max-w-[996px] mx-auto;
+          @apply max-w-[1400] mx-auto;
         }
 
         header,
@@ -125,9 +125,9 @@
           <div
             class="flex justify-between items-center w-[450px] text-lg font-medium text-light"
           >
-            <a href="#" class="hover:text-btn">Articles</a>
-            <a href="#" class="hover:text-btn">Shop</a>
-            <a href="#" class="hover:text-btn">Contact</a>
+            <a href="#articles" class="hover:text-btn">Articles</a>
+            <a href="#shop" class="hover:text-btn">Shop</a>
+            <a href="#contact" class="hover:text-btn">Contact</a>
             <a href="Login.html" target="_blank" class="hover:text-btn"
               >Login</a
             >
@@ -136,7 +136,34 @@
       </div>
     </header>
     <main>
-      <section class="articles">
+      <section class="w-[1400px]">
+        <div
+          class="flex flex-col items-center justify-around w-full h-[100vh] text-light bg-[url('https://monogramcc.com/static/9a0b554db1990565457610c5f83b3ad7/91943/shop_cta_xl_896f6b8270.webp')] bg-cover bg-center"
+        >
+          <div class="text-center text-light">
+            <h1
+              class="uppercase font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-wide leading-tight"
+            >
+              A Console for Every Workflow
+            </h1>
+            <p class="mt-4 text-lg sm:text-xl text-light">
+              Discover the perfect console for yours.
+            </p>
+          </div>
+
+          <a href="#articles" class="text-light hover:text-btn">
+            <svg class="w-18 h-18" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 
+              10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 
+              0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="articles" id="articles">
         <div class="articles__container">
           <div class="articles__container__item">
             <img
@@ -252,7 +279,7 @@
         </div>
       </section>
 
-      <section class="mb-8">
+      <section class="mb-8" id="shop">
         <div class="w-full mx-auto bg-[#c4c4c4]">
           <img
             class="flex justify-self-center w-full h-auto max-w-[1400px] mt-4"
@@ -337,7 +364,7 @@
       </section>
 
       <!-- contact section -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__container">
           <h2 class="contact__container__heading">Contact Us</h2>
           <form method="post" action="#" class="contact__container__form">
@@ -412,20 +439,40 @@
       <div class="">
         <h3 class="font-bold text-lg uppercase">Quick Links</h3>
         <ul class="pt-3 leading-[2rem]">
-          <li><a href="" class="hover:text-btn">Articles</a></li>
-          <li><a href="" class="hover:text-btn">Shop</a></li>
-          <li><a href="" class="hover:text-btn">Contact</a></li>
-          <li><a href="" class="hover:text-btn">Login</a></li>
+          <li><a href="#articles" class="hover:text-btn">Articles</a></li>
+          <li><a href="#shop" class="hover:text-btn">Shop</a></li>
+          <li><a href="#contact" class="hover:text-btn">Contact</a></li>
+          <li><a href="Login.html" class="hover:text-btn">Login</a></li>
         </ul>
       </div>
       <div class="">
         <h3 class="font-bold text-lg uppercase">Information</h3>
         <ul class="pt-3 leading-[2rem]">
-          <li><a href="" class="hover:text-btn">About Us</a></li>
-          <li><a href="" class="hover:text-btn">Work with us</a></li>
-          <li><a href="" class="hover:text-btn">Privacy Policy</a></li>
-          <li><a href="" class="hover:text-btn">Term of Use</a></li>
-          <li><a href="" class="hover:text-btn">Term of Sale</a></li>
+          <li>
+            <a href="https://monogramcc.com/about/" class="hover:text-btn"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="https://monogramcc.com/about/#jobs" class="hover:text-btn"
+              >Work with us</a
+            >
+          </li>
+          <li>
+            <a href="https://monogramcc.com/privacy/" class="hover:text-btn"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a href="https://monogramcc.com/site-terms/" class="hover:text-btn"
+              >Term of Use</a
+            >
+          </li>
+          <li>
+            <a href="https://monogramcc.com/sales-terms/" class="hover:text-btn"
+              >Term of Sale</a
+            >
+          </li>
         </ul>
       </div>
       <div class="text-light">
@@ -435,43 +482,43 @@
           Monogram news.
         </p>
 
-        <form class="flex flex-wrap gap-4">
+        <form class="flex flex-wrap gap-4 mt-4">
           <input
             type="email"
             placeholder="Email Address"
-            class="flex-1 min-w-[220px] bg-transparent border border-[#eac4b8] text-[#ecedf0] placeholder-[#1e2150] px-4 py-2 focus:outline-none"
+            class="flex-1 min-w-[220px] bg-transparent border bg-white text-dark placeholder-[#1e2150] px-4 py-2 focus:outline-none"
           />
           <button
             type="submit"
-            class="bg-[#eac4b8] text-[#1e2150] px-6 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#d9afa1] transition"
+            class="bg-white text-[#1e2150] px-6 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#d9afa1] transition"
           >
             Submit
           </button>
         </form>
 
         <div class="flex items-center gap-4 pt-4">
-          <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
             <img
               src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
               class="w-5 h-5"
               alt="Instagram"
             />
           </a>
-          <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
             <img
               src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/twitter.svg"
               class="w-5 h-5"
               alt="Twitter"
             />
           </a>
-          <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
             <img
               src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
               class="w-5 h-5"
               alt="Facebook"
             />
           </a>
-          <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
             <img
               src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg"
               class="w-5 h-5"
