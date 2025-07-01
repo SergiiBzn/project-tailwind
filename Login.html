@@ -20,7 +20,7 @@
     }
     @layer components{
        .loginwith{
-        @apply flex gap-4 mx-8 items-center my-4 shadow-md/20  hover:bg-gray-300 hover:cursor-pointer hover:text-dark-blau;
+        @apply flex gap-4 mx-8 items-center px-4 my-4 shadow-md/20 hover:bg-gray-300 hover:cursor-pointer hover:text-dark-blau;
       }
       .inputbox{
         @apply border rounded-sm border-gray-400 rounded-sm p-1 w-full my-1;
@@ -29,22 +29,24 @@
         @apply absolute right-3 w-5 h-5  cursor-pointer -translate-y-8;
       }
       .signin-button{
-        @apply bg-dark-blau text-white font-bold w-full rounded-sm p-2  hover:bg-button-hover hover:cursor-pointer; 
+        @apply bg-dark-blau text-white font-bold w-full rounded-md p-2  hover:bg-button-hover hover:cursor-pointer; 
       }
       
     }
-    @layer base{
-      /* section{
-        @apply py-4;
-      } */
-       header {
+ @layer base {
+        html {
+          @apply scroll-smooth;
+        }
+       
+        header,
+        footer {
           @apply bg-dark-blau;
         }
-    }
+      }
   </style>
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen">
   <header>
     <div>
       <nav class="flex justify-between items-center p-6">
@@ -53,15 +55,15 @@
           <span class="text-2xl font-semibold text-[#f0efed]">Monogram</span>
         </div>
         <div class="flex justify-between items-center w-[450px] text-lg font-medium text-[#f0efed]">
-          <a href="#">Articles</a>
+          <a href="./index.html#articles">Articles</a>
           <a href="#">Shop</a>
-          <a href="#">Contact</a>
+          <a href="./index.html#contact">Contact</a>
           <a href="#">Login</a>
         </div>
       </nav>
     </div>
   </header>
-  <main class="max-w-sm mx-auto mt-4 md:border-4 md:border-bordergray lg:max-w-screen-md lg:mt-16 lg:p-8">
+  <main class="flex-grow max-w-sm mx-auto my-4 md:outline-4 md:outline-bordergray lg:min-w-[760px] lg:p-4 ">
     <section class="lg:mb-4">
       <div class="text-center">Login to Monogram</div>
       <div class="text-center">New to Monogram? <a class="text-blue-600 underline" href="#">Sign up</a></div>
@@ -69,7 +71,7 @@
     <section class="flex flex-col  justify-center items-center lg:w-full lg:flex-row ">
       <div class="w-full border-b border-gray-300 pb-4 lg:border-none ">
         <div class="loginwith">
-          <img class="scale-50" src="login-img/g.webp">
+          <img class="scale-50" src="login-img/icons8-google-logo-48.png">
           <span><strong>sign in with Google</strong></span>
         </div>
         <div class="loginwith">
@@ -78,7 +80,7 @@
         </div>
         <div class="loginwith">
           <img class="scale-50" src="login-img/icons8-paypal-48.png">
-          <span><strong>sign in with paypal</strong></span>
+          <span><strong>sign in with Paypal</strong></span>
         </div>
       </div>
       <div class="w-full lg:border-l lg: border-gray-300">
@@ -96,6 +98,70 @@
       </div>
     </section>
   </main>
+  <footer class="flex justify-around items-start p-9 text-light mt-4 bg-dark-blau">
+    <div class="">
+      <h3 class="font-bold text-lg uppercase">Monogram</h3>
+      <ul class="pt-3 leading-[2rem]">
+        <li>305 King St. W.</li>
+        <li>Suite 502</li>
+        <li>Kitchener, ON</li>
+        <li>Canada</li>
+      </ul>
+    </div>
+    <div class="">
+      <h3 class="font-bold text-lg uppercase">Quick Links</h3>
+      <ul class="pt-3 leading-[2rem]">
+        <li><a href="" class="hover:text-btn">Articles</a></li>
+        <li><a href="" class="hover:text-btn">Shop</a></li>
+        <li><a href="" class="hover:text-btn">Contact</a></li>
+        <li><a href="" class="hover:text-btn">Login</a></li>
+      </ul>
+    </div>
+    <div class="">
+      <h3 class="font-bold text-lg uppercase">Information</h3>
+      <ul class="pt-3 leading-[2rem]">
+        <li><a href="" class="hover:text-btn">About Us</a></li>
+        <li><a href="" class="hover:text-btn">Work with us</a></li>
+        <li><a href="" class="hover:text-btn">Privacy Policy</a></li>
+        <li><a href="" class="hover:text-btn">Term of Use</a></li>
+        <li><a href="" class="hover:text-btn">Term of Sale</a></li>
+      </ul>
+    </div>
+    <div class="text-light">
+      <h3 class="font-bold uppercase pb-3">Subscribe to Monogram</h3>
+      <p class="max-w-md">
+        Master productivity with Creative Console and get all the latest
+        Monogram news.
+      </p>
+
+      <form class="flex flex-wrap gap-4">
+        <input type="email" placeholder="Email Address"
+          class="flex-1 min-w-[220px] bg-transparent border border-[#eac4b8] text-[#ecedf0] placeholder-[#1e2150] px-4 py-2 focus:outline-none" />
+        <button type="submit"
+          class="bg-[#eac4b8] text-[#1e2150] px-6 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#d9afa1] transition">
+          Submit
+        </button>
+      </form>
+
+      <div class="flex items-center gap-4 pt-4">
+        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" class="w-5 h-5"
+            alt="Instagram" />
+        </a>
+        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/twitter.svg" class="w-5 h-5" alt="Twitter" />
+        </a>
+        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" class="w-5 h-5" alt="Facebook" />
+        </a>
+        <a href="#" class="bg-[#eac4b8] p-2 rounded-full">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" class="w-5 h-5" alt="YouTube" />
+        </a>
+      </div>
+
+      <p class="pt-4 text-sm">© Monogram 2025</p>
+    </div>
+  </footer>
 </body>
 
 </html>
