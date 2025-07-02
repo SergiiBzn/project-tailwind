@@ -39,10 +39,10 @@
 
       @layer components {
         .articles {
-          @apply w-full;
+          @apply max-w-[1400px] my-[4rem] mx-4 px-[0rem];
         }
         .articles__container {
-          @apply grid  grid-cols-[1fr] md:grid-cols-[1fr_1fr]   gap-y-0 sm:gap-y-[0rem] sm:gap-x-[1rem]  px-[1rem] sm:px-[0rem] mt-4;
+          @apply grid  grid-cols-[1fr] md:grid-cols-[1fr_1fr]   gap-y-0 sm:gap-y-[0rem] sm:gap-x-[1rem]  px-[1rem] sm:px-[0rem];
         }
         .articles__container__item {
           /* overflow-hidden is to prevent image overflowing the container */
@@ -111,10 +111,10 @@
   </head>
 
   <body>
-    <header>
+    <!--     <header>
       <div>
-        <nav class="flex justify-between items-center p-9">
-          <div class="flex justify-between items-center w-[250px]">
+        <nav class="flex   justify-between items-center p-9">
+          <div class="flex  justify-between items-center w-[250px]">
             <a href="index.html"
               ><img src="images/logo.png" alt="logo" class="w-10 h-10 bg-white"
             /></a>
@@ -136,13 +136,41 @@
           </div>
         </nav>
       </div>
+    </header> -->
+    <header>
+      <div>
+        <nav
+          class="flex flex-col md:flex-row justify-evenly md:justify-between items-center py-9 mx-8 lg:mx-[4rem] "
+        >
+          <div class="flex  justify-between items-center gap-4">
+            <a href="index.html"
+              ><img src="images/logo.png" alt="logo" class="w-10 h-10 bg-white"
+            /></a>
+            <a
+              href="index.html"
+              class="text-2xl font-semibold text-light hover:text-btn"
+              >Monogram</a
+            >
+          </div>
+          <div
+            class="flex justify-between items-center gap-8 text-lg font-medium text-light px-4  py-4 md:py-0  flex-col md:flex-row"
+          >
+            <a href="#articles" class="hover:text-btn">Articles</a>
+            <a href="#shop" class="hover:text-btn">Shop</a>
+            <a href="#contact" class="hover:text-btn">Contact</a>
+            <a href="Login.html" target="_blank" class="hover:text-btn"
+              >Login</a
+            >
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <section>
         <div
-          class="flex flex-col items-center justify-around w-full h-[600px] text-light bg-[url('https://monogramcc.com/static/9a0b554db1990565457610c5f83b3ad7/91943/shop_cta_xl_896f6b8270.webp')] bg-cover bg-center"
+          class="flex flex-col items-center justify-around w-full h-[600px] text-light bg-[url('https://monogramcc.com/static/9a0b554db1990565457610c5f83b3ad7/91943/shop_cta_xl_896f6b8270.webp')] bg-cover bg-center "
         >
-          <div class="text-center text-light">
+          <div class="text-center text-light ">
             <h1
               class="uppercase font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-wide leading-tight"
             >
@@ -165,7 +193,8 @@
           </a>
         </div>
       </section>
-      <section class="articles w-[1400px]" id="articles">
+
+      <section class="articles" id="articles">
         <div class="articles__container">
           <div class="articles__container__item">
             <img
@@ -281,7 +310,7 @@
         </div>
       </section>
 
-      <section class="mb-8" id="shop">
+      <section class="mb-8 mx-4" id="shop">
         <div class="w-full mx-auto bg-[#c4c4c4]">
           <img
             class="flex justify-self-center w-full h-auto max-w-[1400px] mt-4"
@@ -291,10 +320,10 @@
         </div>
       </section>
       <section
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-auto max-w-[1400px]"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-4 max-w-[1400px] place-content-center"
       >
-        <figure class="p-4">
-          <img class="w-[90%] h-auto" src="./images/lowerSection2.png" alt="" />
+        <figure class="py-4">
+          <img class="w-full h-auto" src="./images/lowerSection2.png" alt="" />
           <figcapture class="flex justify-between w-[90%]">
             <div class="articles__container__item__content__heading">
               CARRYING CASE
@@ -302,9 +331,9 @@
             <div class="w-[40%] flex justify-end">59€</div>
           </figcapture>
         </figure>
-        <figure class="p-4">
+        <figure class="py-4">
           <img
-            class="w-[90%] h-auto"
+            class="w-full h-auto"
             src="./images/lowerSection3.png"
             alt=""
           /><figcapture class="flex justify-between w-[90%]">
@@ -314,9 +343,9 @@
             <div class="w-[40%] flex justify-end">159€</div>
           </figcapture>
         </figure>
-        <figure class="p-4">
+        <figure class="py-4">
           <img
-            class="w-[90%] h-auto"
+            class="w-full h-auto"
             src="./images/lowerSection4.png"
             alt=""
           /><figcapture class="flex justify-between w-[90%]">
@@ -326,9 +355,9 @@
             <div class="w-[40%] flex justify-end">159€</div>
           </figcapture>
         </figure>
-        <figure class="p-4">
+        <figure class="py-4">
           <img
-            class="w-[90%] h-auto"
+            class="w-full h-auto"
             src="./images/lowerSection5.png"
             alt=""
           /><figcapture class="flex justify-between w-[90%]">
@@ -338,9 +367,9 @@
             <div class="w-[40%] flex justify-end">129€</div>
           </figcapture>
         </figure>
-        <figure class="p-4">
+        <figure class="py-4">
           <img
-            class="w-[90%] h-auto"
+            class="w-full h-auto"
             src="./images/lowerSection6.png"
             alt=""
           /><figcapture class="flex justify-between w-[90%]">
@@ -350,9 +379,9 @@
             <div class="w-[40%] flex justify-end">159€</div>
           </figcapture>
         </figure>
-        <figure class="p-4">
+        <figure class="py-4">
           <img
-            class="w-[90%] h-auto"
+            class="w-full h-auto"
             src="./images/lowerSection7.png"
             alt=""
           /><figcapture class="flex justify-between w-[90%]">
@@ -362,9 +391,9 @@
             <div class="w-[40%] flex justify-end">129€</div>
           </figcapture>
         </figure>
-        <figure class="p-4">
+        <figure class="py-4">
           <img
-            class="w-[90%] h-auto"
+            class="w-full h-auto"
             src="./images/lowerSection8.png"
             alt=""
           /><figcapture class="flex justify-between w-[90%]">
@@ -374,9 +403,9 @@
             <div class="w-[40%] flex justify-end">159€</div>
           </figcapture>
         </figure>
-        <figure class="p-4">
+        <figure class="py-4">
           <img
-            class="w-[90%] h-auto"
+            class="w-full h-auto"
             src="./images/lowerSection9.png"
             alt=""
           /><figcapture class="flex justify-between w-[90%]">
@@ -386,9 +415,9 @@
             <div class="w-[40%] flex justify-end">39€</div>
           </figcapture>
         </figure>
-        <figure class="p-4">
+        <figure class="py-4">
           <img
-            class="w-[90%] h-auto"
+            class="w-full h-auto"
             src="./images/lowerSection10.png"
             alt=""
           /><figcapture class="flex justify-between w-[90%]">
@@ -398,9 +427,9 @@
             <div class="w-[40%] flex justify-end">69€</div>
           </figcapture>
         </figure>
-        <figure class="p-4">
+        <figure class="py-4">
           <img
-            class="w-[90%] h-auto"
+            class="w-full h-auto"
             src="./images/lowerSection11.png"
             alt=""
           /><figcapture class="flex justify-between w-[90%]">
@@ -475,7 +504,7 @@
       </section>
     </main>
 
-    <footer class="flex justify-around items-start p-9 text-light">
+    <!--     <footer class="flex justify-around items-start p-9 text-light">
       <div class="">
         <h3 class="font-bold text-lg uppercase">Monogram</h3>
         <ul class="pt-3 leading-[2rem]">
@@ -546,6 +575,118 @@
         </form>
 
         <div class="flex items-center gap-4 pt-4">
+          <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
+              class="w-5 h-5"
+              alt="Instagram"
+            />
+          </a>
+          <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/twitter.svg"
+              class="w-5 h-5"
+              alt="Twitter"
+            />
+          </a>
+          <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
+              class="w-5 h-5"
+              alt="Facebook"
+            />
+          </a>
+          <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg"
+              class="w-5 h-5"
+              alt="YouTube"
+            />
+          </a>
+        </div>
+
+        <p class="pt-4 text-sm">© Monogram 2025</p>
+      </div>
+    </footer> -->
+
+    <!--   <footer
+      class="flex  flex-col md:flex-row  justify-between items-center md:items-start p-9 text-light gap-y-4 md:gap-y-0 "
+    > -->
+
+    <!-- todo:footer layout to be fixed -->
+    <footer
+      class=" w-full mx-auto grid gap-x-4 grid-cols-[1fr_1fr] sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr)]   place-content-center   p-9 text-light gap-y-4 md:gap-y-0  "
+    >
+      <div class="mb-8">
+        <h3 class="font-bold text-lg uppercase">Monogram</h3>
+        <ul class="pt-3 leading-[2rem]">
+          <li>305 King St. W.</li>
+          <li>Suite 502</li>
+          <li>Kitchener, ON</li>
+          <li>Canada</li>
+        </ul>
+      </div>
+      <div class="mb-8">
+        <h3 class="font-bold text-lg uppercase">Quick Links</h3>
+        <ul class="pt-3 leading-[2rem]">
+          <li><a href="#articles" class="hover:text-btn">Articles</a></li>
+          <li><a href="#shop" class="hover:text-btn">Shop</a></li>
+          <li><a href="#contact" class="hover:text-btn">Contact</a></li>
+          <li><a href="Login.html" class="hover:text-btn">Login</a></li>
+        </ul>
+      </div>
+      <div class="mb-8">
+        <h3 class="font-bold text-lg uppercase">Information</h3>
+        <ul class="pt-3 leading-[2rem]">
+          <li>
+            <a href="https://monogramcc.com/about/" class="hover:text-btn"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="https://monogramcc.com/about/#jobs" class="hover:text-btn"
+              >Work with us</a
+            >
+          </li>
+          <li>
+            <a href="https://monogramcc.com/privacy/" class="hover:text-btn"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a href="https://monogramcc.com/site-terms/" class="hover:text-btn"
+              >Term of Use</a
+            >
+          </li>
+          <li>
+            <a href="https://monogramcc.com/sales-terms/" class="hover:text-btn"
+              >Term of Sale</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="text-light">
+        <h3 class="font-bold uppercase pb-3">Subscribe to Monogram</h3>
+        <p class="max-w-md">
+          Master productivity with Creative Console and get all the latest
+          Monogram news.
+        </p>
+
+        <form class="flex flex-wrap gap-4 mt-4">
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="flex-1 min-w-[220px] bg-transparent border bg-white text-dark placeholder-[#1e2150] px-4 py-2 focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="bg-white text-[#1e2150] px-6 py-2 rounded-full font-bold uppercase tracking-wider hover:bg-[#d9afa1] transition"
+          >
+            Submit
+          </button>
+        </form>
+
+        <div class="flex items-center gap-4 pt-4 ">
           <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
             <img
               src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
