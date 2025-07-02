@@ -49,12 +49,13 @@
 <body class="flex flex-col min-h-screen">
   <header>
     <div>
-      <nav class="flex justify-between items-center p-9">
-        <div class="flex justify-between items-center w-[250px]">
+      <nav class="flex flex-col md:flex-row justify-evenly md:justify-between items-center py-9 mx-8 lg:mx-[4rem] ">
+        <div class="flex  justify-between items-center gap-4">
           <a href="index.html"><img src="images/logo.png" alt="logo" class="w-10 h-10 bg-white" /></a>
           <a href="index.html" class="text-2xl font-semibold text-light hover:text-btn">Monogram</a>
         </div>
-        <div class="flex justify-between items-center w-[450px] text-lg font-medium text-light">
+        <div
+          class="flex justify-between items-center gap-8 text-lg font-medium text-light px-4  py-4 md:py-0  flex-col md:flex-row">
           <a href="#articles" class="hover:text-btn">Articles</a>
           <a href="#shop" class="hover:text-btn">Shop</a>
           <a href="#contact" class="hover:text-btn">Contact</a>
@@ -63,7 +64,7 @@
       </nav>
     </div>
   </header>
-  <main class="flex-grow max-w-sm mx-auto my-4 md:outline-4 md:outline-bordergray lg:min-w-[760px] lg:p-4 ">
+  <main class="flex-grow max-w-sm mx-auto my-4 md:outline-4 md:outline-bordergray lg:min-w-[760px] lg:p-4 lg:my-16">
     <section class="lg:mb-4">
       <div class="text-center">Login to Monogram</div>
       <div class="text-center">New to Monogram? <a class="text-blue-600 underline" href="#">Sign up</a></div>
@@ -98,8 +99,9 @@
       </div>
     </section>
   </main>
-  <footer class="flex justify-around items-start p-9 text-light mt-4 bg-dark-blau">
-    <div class="">
+  <footer
+    class=" w-full mx-auto grid gap-x-4 grid-cols-[1fr_1fr] sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr)]   place-content-center   p-9 text-light gap-y-4 md:gap-y-0  ">
+    <div class="mb-8">
       <h3 class="font-bold text-lg uppercase">Monogram</h3>
       <ul class="pt-3 leading-[2rem]">
         <li>305 King St. W.</li>
@@ -108,7 +110,7 @@
         <li>Canada</li>
       </ul>
     </div>
-    <div class="">
+    <div class="mb-8">
       <h3 class="font-bold text-lg uppercase">Quick Links</h3>
       <ul class="pt-3 leading-[2rem]">
         <li><a href="#articles" class="hover:text-btn">Articles</a></li>
@@ -117,7 +119,7 @@
         <li><a href="Login.html" class="hover:text-btn">Login</a></li>
       </ul>
     </div>
-    <div class="">
+    <div class="mb-8">
       <h3 class="font-bold text-lg uppercase">Information</h3>
       <ul class="pt-3 leading-[2rem]">
         <li>
@@ -153,7 +155,7 @@
         </button>
       </form>
 
-      <div class="flex items-center gap-4 pt-4">
+      <div class="flex items-center gap-4 pt-4 ">
         <a href="#" class="bg-white p-2 rounded-full hover:bg-btn">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" class="w-5 h-5"
             alt="Instagram" />
